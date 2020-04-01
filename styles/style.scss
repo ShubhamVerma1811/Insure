@@ -18,7 +18,6 @@ $secondaryFont: "Karla";
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
-  flex-wrap: wrap;
 }
 
 * {
@@ -41,11 +40,9 @@ body {
 }
 
 header {
-  //   @include border(3px, red);
   position: relative;
 
   nav {
-    // @include border(3px, darkblue);
     @include flex(row, flex-end);
     align-items: center;
     font-family: $secondaryFont;
@@ -94,19 +91,16 @@ header {
     @include flex(row, space-between);
 
     img[alt="bg-pattern-intro-left-desktop"] {
-      //   @include border(3px, cyan);
       position: absolute;
       left: -175px;
     }
 
     .hero-info {
-      //   @include border(3px, magenta);
       margin: auto 168px;
       width: 600px;
       position: relative;
 
       h1 {
-        //   @include border(3px, blue);
         font-family: $primaryFont;
         font-weight: 400;
         font-size: 75px;
@@ -147,8 +141,6 @@ header {
     }
 
     img[alt="bg-pattern-intro-right-desktop"] {
-      //   @include border(3px, cyan);
-      //   z-index: 1;
       position: absolute;
       top: -80px;
       right: 0;
@@ -171,7 +163,6 @@ header {
 }
 
 .content-container {
-  //   @include border(3px, red);
   margin: 300px 168px;
   margin-bottom: 100px;
 
@@ -194,14 +185,12 @@ header {
   }
 
   .content-cards-container {
-    // @include border(3px, green);
     margin: 50px 0px;
     @include flex(row, space-around);
 
     .content-card {
       font-family: $primaryFont;
       font-weight: 400;
-      //   @include border(3px, magenta);
       margin: 20px 40px;
 
       &:nth-of-type(odd) {
