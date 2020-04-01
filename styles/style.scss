@@ -255,7 +255,6 @@ header {
 
 footer {
   margin-top: 100px;
-  margin-bottom: 100px;
   position: relative;
 
   img[alt="bg-pattern-footer-desktop"] {
@@ -305,6 +304,21 @@ footer {
           cursor: pointer;
           text-decoration: underline;
         }
+      }
+    }
+  }
+
+  .ref {
+    width: max-content;
+    margin: 40px auto 40px auto;
+    color: $neutralVeryDarkViolet;
+    a {
+      text-decoration: none;
+      color: $primayDarkViolet;
+      font-family: $primaryFont;
+
+      &:hover {
+        text-decoration: none;
       }
     }
   }

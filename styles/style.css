@@ -279,7 +279,6 @@ header .hero-container img[alt="bg-pattern-intro-left-desktop"] {
 
 footer {
   margin-top: 100px;
-  margin-bottom: 100px;
   position: relative;
 }
 
@@ -355,5 +354,23 @@ footer .footer-content-container ul li {
 footer .footer-content-container ul li:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+footer .ref {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 40px auto 40px auto;
+  color: #2b272f;
+}
+
+footer .ref a {
+  text-decoration: none;
+  color: #272136;
+  font-family: "DM Serif Display";
+}
+
+footer .ref a:hover {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
