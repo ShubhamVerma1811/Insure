@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* button:hover {
+  cursor: pointer;
+}
+
+* a:hover {
+  cursor: pointer;
+  color: #272136;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Karla";
+  font-weight: 400, 700;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Karla";
+  font-weight: 400;
+  height: 50px;
+  margin: 1% 168px;
+}
+
+header nav a {
+  color: #837d87;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 2%;
+  z-index: 1;
+}
+
+header nav a:hover {
+  color: #272136;
+}
+
+header nav button {
+  border: 2px solid #272136;
+  font-family: "Karla";
+  width: 142px;
+  height: 36px;
+  background-color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  z-index: 1;
+}
+
+header nav button:hover {
+  color: white;
+  background-color: #272136;
+}
+
+header nav img {
+  margin-right: auto;
+}
+
+header .hero-container {
+  background-color: #272136;
+  color: white;
+  position: relative;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header .hero-container img[alt="bg-pattern-intro-left-desktop"] {
+  position: absolute;
+  left: -175px;
+}
+
+header .hero-container .hero-info {
+  margin: auto 168px;
+  width: 600px;
+  position: relative;
+}
+
+header .hero-container .hero-info h1 {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 75px;
+  margin: 0;
+  width: 550px;
+  line-height: 70px;
+}
+
+header .hero-container .hero-info span {
+  position: relative;
+  right: -90px;
+  bottom: 50px;
+  display: inline-block;
+  -webkit-transform: scale(18, 1);
+          transform: scale(18, 1);
+}
+
+header .hero-container .hero-info p {
+  font-family: "Karla";
+  line-height: 30px;
+}
+
+header .hero-container .hero-info button {
+  border: 2px solid white;
+  font-family: "Karla";
+  padding: 1% 2%;
+  width: 142px;
+  height: 36px;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+}
+
+header .hero-container .hero-info button:hover {
+  color: #272136;
+  background-color: white;
+}
+
+header .hero-container img[alt="bg-pattern-intro-right-desktop"] {
+  position: absolute;
+  top: -80px;
+  right: 0;
+}
+
+header .hero-container img[alt="image-intro-desktop"] {
+  position: absolute;
+  left: 800px;
+  top: 100px;
+}
+
+header .hero-container img[alt="bg-pattern-intro-left-desktop"] {
+  position: absolute;
+  left: 0;
+  top: 400px;
+  right: 100px;
+}
+
+.content-container {
+  margin: 300px 168px;
+  margin-bottom: 100px;
+}
+
+.content-container span {
+  position: relative;
+  right: -90px;
+  bottom: 50px;
+  display: inline-block;
+  -webkit-transform: scale(18, 1);
+          transform: scale(18, 1);
+}
+
+.content-container h1 {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 75px;
+  margin: 0;
+  width: 550px;
+  line-height: 70px;
+  color: #272136;
+}
+
+.content-container .content-cards-container {
+  margin: 50px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.content-container .content-cards-container .content-card {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  margin: 20px 40px;
+}
+
+.content-container .content-cards-container .content-card:nth-of-type(odd) {
+  margin: 20px 0;
+}
+
+.content-container .content-cards-container .content-card h2 {
+  font-size: 25px;
+  color: #272136;
+}
+
+.content-container .content-cards-container .content-card p {
+  font-family: "Karla";
+  color: #837d87;
+  line-height: 25px;
+}
+
+.about-container {
+  position: relative;
+  background-color: #272136;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto 168px;
+  padding: 4%;
+  overflow: hidden;
+}
+
+.about-container h2 {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 50px;
+  margin: 0;
+  width: 550px;
+  line-height: 70px;
+}
+
+.about-container button {
+  border: 2px solid white;
+  font-family: "Karla";
+  width: 142px;
+  height: 36px;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.about-container button:hover {
+  color: #272136;
+  background-color: white;
+}
+
+.about-container img {
+  position: absolute;
+  right: 0;
+}
+
+footer {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+footer img[alt="bg-pattern-footer-desktop"] {
+  position: absolute;
+  top: -50px;
+}
+
+footer .footer-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto 168px;
+}
+
+footer .footer-header img {
+  margin-right: 10px;
+}
+
+footer .footer-header img:hover {
+  color: #272136;
+  cursor: pointer;
+}
+
+footer .footer-header img:first-of-type {
+  margin-right: auto;
+}
+
+footer .footer-content-container {
+  margin: auto 168px;
+  margin-right: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: "Karla";
+  text-transform: uppercase;
+}
+
+footer .footer-content-container h3 {
+  color: #837d87;
+  font-size: 14px;
+}
+
+footer .footer-content-container ul {
+  padding: 0;
+}
+
+footer .footer-content-container ul li {
+  list-style-type: none;
+  font-size: 14px;
+  color: #272136;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+footer .footer-content-container ul li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=style.css.map */

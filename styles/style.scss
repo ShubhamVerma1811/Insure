@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+$primayDarkViolet: hsl(257, 25%, 17%);
+$primayGrayishBlue: hsl(216, 30%, 68%);
+
+$neutralVeryDarkViolet: hsl(270, 9%, 17%);
+$neutralDarkGrayishViolet: hsl(273, 4%, 51%);
+$neutralVeryLightGray: hsl(0, 0%, 98%);
+
+$primaryFont: "DM Serif Display";
+$secondaryFont: "Karla";
+
+@mixin border($size, $color) {
+  border: $size solid $color;
+}
+@mixin flex($direction, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  flex-wrap: wrap;
+}
+
+* {
+  box-sizing: border-box;
+  button:hover {
+    cursor: pointer;
+  }
+  a:hover {
+    cursor: pointer;
+    color: $primayDarkViolet;
+  }
+}
+
+body {
+  font-size: 16px;
+  font-family: $secondaryFont;
+  font-weight: 400, 700;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  //   @include border(3px, red);
+  position: relative;
+
+  nav {
+    // @include border(3px, darkblue);
+    @include flex(row, flex-end);
+    align-items: center;
+    font-family: $secondaryFont;
+    font-weight: 400;
+    height: 50px;
+    margin: 1% 168px;
+
+    a {
+      color: $neutralDarkGrayishViolet;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+      margin-right: 2%;
+      z-index: 1;
+
+      &:hover {
+        color: $primayDarkViolet;
+      }
+    }
+
+    button {
+      @include border(2px, $primayDarkViolet);
+      font-family: $secondaryFont;
+      width: 142px;
+      height: 36px;
+      background-color: white;
+      text-transform: uppercase;
+      font-weight: 700;
+      z-index: 1;
+      &:hover {
+        color: white;
+        background-color: $primayDarkViolet;
+      }
+    }
+
+    img {
+      margin-right: auto;
+    }
+  }
+
+  .hero-container {
+    background-color: $primayDarkViolet;
+    color: white;
+    position: relative;
+    height: 600px;
+    @include flex(row, space-between);
+
+    img[alt="bg-pattern-intro-left-desktop"] {
+      //   @include border(3px, cyan);
+      position: absolute;
+      left: -175px;
+    }
+
+    .hero-info {
+      //   @include border(3px, magenta);
+      margin: auto 168px;
+      width: 600px;
+      position: relative;
+
+      h1 {
+        //   @include border(3px, blue);
+        font-family: $primaryFont;
+        font-weight: 400;
+        font-size: 75px;
+        margin: 0;
+        width: 550px;
+        line-height: 70px;
+      }
+
+      span {
+        position: relative;
+        right: -90px;
+        bottom: 50px;
+        display: inline-block;
+        transform: scale(18, 1);
+      }
+
+      p {
+        font-family: $secondaryFont;
+        line-height: 30px;
+      }
+
+      button {
+        @include border(2px, white);
+        font-family: $secondaryFont;
+        padding: 1% 2%;
+        width: 142px;
+        height: 36px;
+        background-color: transparent;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 700;
+
+        &:hover {
+          color: $primayDarkViolet;
+          background-color: white;
+        }
+      }
+    }
+
+    img[alt="bg-pattern-intro-right-desktop"] {
+      //   @include border(3px, cyan);
+      //   z-index: 1;
+      position: absolute;
+      top: -80px;
+      right: 0;
+      //   left: 1300px;
+    }
+
+    img[alt="image-intro-desktop"] {
+      position: absolute;
+      //   width: ;
+      left: 800px;
+      top: 100px;
+    }
+    img[alt="bg-pattern-intro-left-desktop"] {
+      position: absolute;
+      left: 0;
+      top: 400px;
+      right: 100px;
+    }
+  }
+}
+
+.content-container {
+  //   @include border(3px, red);
+  margin: 300px 168px;
+  margin-bottom: 100px;
+
+  span {
+    position: relative;
+    right: -90px;
+    bottom: 50px;
+    display: inline-block;
+    transform: scale(18, 1);
+  }
+
+  h1 {
+    font-family: $primaryFont;
+    font-weight: 400;
+    font-size: 75px;
+    margin: 0;
+    width: 550px;
+    line-height: 70px;
+    color: $primayDarkViolet;
+  }
+
+  .content-cards-container {
+    // @include border(3px, green);
+    margin: 50px 0px;
+    @include flex(row, space-around);
+
+    .content-card {
+      font-family: $primaryFont;
+      font-weight: 400;
+      //   @include border(3px, magenta);
+      margin: 20px 40px;
+
+      &:nth-of-type(odd) {
+        margin: 20px 0;
+      }
+
+      h2 {
+        font-size: 25px;
+        color: $primayDarkViolet;
+      }
+
+      p {
+        font-family: $secondaryFont;
+        color: $neutralDarkGrayishViolet;
+        line-height: 25px;
+      }
+    }
+  }
+}
+
+.about-container {
+  position: relative;
+  background-color: $primayDarkViolet;
+  color: white;
+  @include flex(row, space-between);
+  align-items: center;
+  margin: auto 168px;
+  padding: 4%;
+  overflow: hidden;
+
+  h2 {
+    font-family: $primaryFont;
+    font-weight: 400;
+    font-size: 50px;
+    margin: 0;
+    width: 550px;
+    line-height: 70px;
+  }
+
+  button {
+    border: 2px solid white;
+    font-family: "Karla";
+    width: 142px;
+    height: 36px;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    z-index: 1;
+
+    &:hover {
+      color: $primayDarkViolet;
+      background-color: white;
+    }
+  }
+
+  img {
+    position: absolute;
+    right: 0;
+  }
+}
+
+footer {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative;
+
+  img[alt="bg-pattern-footer-desktop"] {
+    position: absolute;
+    top: -50px;
+  }
+  .footer-header {
+    @include flex(row, flex-end);
+    align-items: center;
+    margin: auto 168px;
+
+    img {
+      margin-right: 10px;
+      &:hover {
+        color: $primayDarkViolet;
+        cursor: pointer;
+      }
+    }
+
+    img:first-of-type {
+      margin-right: auto;
+    }
+  }
+
+  .footer-content-container {
+    margin: auto 168px;
+    margin-right: 400px;
+    @include flex(row, space-between);
+    font-family: $secondaryFont;
+    text-transform: uppercase;
+
+    h3 {
+      color: $neutralDarkGrayishViolet;
+      font-size: 14px;
+    }
+
+    ul {
+      padding: 0;
+      li {
+        list-style-type: none;
+        font-size: 14px;
+        color: $primayDarkViolet;
+        margin-bottom: 10px;
+        font-weight: 700;
+
+        &:hover {
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
